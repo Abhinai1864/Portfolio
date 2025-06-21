@@ -11,25 +11,18 @@ body {
   color: #333;
   line-height: 1.6;
 }
-
-/* Navigation */
+/* nav */
 nav {
   background: #1565c0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   padding: 1rem;
 }
 nav a {
   color: white;
-  margin: 0.5rem 1rem;
+  margin: 0 1rem;
   text-decoration: none;
-  font-weight: 500;
 }
-nav a:hover {
-  text-decoration: underline;
-}
-
 .container {
   max-width: 960px;
   margin: auto;
@@ -40,20 +33,8 @@ nav a:hover {
 header {
   background: linear-gradient(to right, #0077b6, #00b4d8);
   color: white;
-  padding: 3rem 1rem;
+  padding: 3rem 0;
   text-align: center;
-  position: relative;
-}
-
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid white;
-  margin: 0 auto 1rem;
-  display: block;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -65,6 +46,16 @@ header p {
   font-size: 1.2rem;
   opacity: 0.9;
 }
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 /* Sections */
 section h2 {
@@ -72,6 +63,17 @@ section h2 {
   margin-bottom: 1rem;
   color: #023e8a;
 }
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 .about, .skills, .projects, .contact {
   margin-top: 2rem;
@@ -85,7 +87,6 @@ section h2 {
 .skills ul {
   list-style: disc;
   padding-left: 1.5rem;
-  line-height: 1.8;
 }
 
 /* Projects */
@@ -97,18 +98,10 @@ section h2 {
   border-radius: 8px;
   transition: all 0.3s ease;
 }
+
 .project-card:hover {
   transform: scale(1.02);
   background-color: #caf0f8;
-}
-.project-card a {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: #023e8a;
-  font-weight: bold;
-}
-.project-card a:hover {
-  text-decoration: underline;
 }
 
 /* Contact */
@@ -117,6 +110,7 @@ section h2 {
   text-decoration: none;
   font-weight: bold;
 }
+
 .contact a:hover {
   text-decoration: underline;
 }
@@ -129,20 +123,4 @@ footer {
   background: #03045e;
   color: white;
   font-size: 0.9rem;
-}
-
-/* 🔄 Responsive: Optional Mobile Friendly */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2.2rem;
-  }
-  nav {
-    flex-direction: column;
-  }
-  nav a {
-    margin: 0.5rem 0;
-  }
-  .container {
-    padding: 1rem;
-  }
 }

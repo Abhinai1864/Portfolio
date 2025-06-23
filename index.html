@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maddela Abhinai | Java Backend Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <img src="mypic.jpg" alt="Maddela Abhinai" class="profile-photo" />
+
   <header>
     <div class="container">
-      <img src="me.jpg" alt="Maddela Abhinai" class="profile-photo" />
-      <h1>Maddela Abhinai</h1>
+      <h1 class="typing">Maddela Abhinai</h1>
       <p>Java Backend Developer</p>
     </div>
   </header>
@@ -22,60 +26,70 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about" class="about container">
+  <section id="about" class="about container" data-aos="fade-right">
     <h2>About Me</h2>
     <p>
-      Hi, I am a Computer Science graduate with a strong understanding of Core Java. 
-      I am currently learning Spring Framework, Spring Boot, and Microservices. 
-      I aim to work as a Java backend developer, contributing to building useful and 
-      reliable applications. I am eager to learn and grow within a reputed MNC.
+      Hi, I am a Computer Science graduate with good knowledge of Core Java. I'm learning Spring Framework, Spring Boot, and Microservices.
+      I aspire to work as a Java backend developer and contribute to building reliable applications. I'm eager to grow in a reputed MNC.
     </p>
   </section>
 
-  <section id="skills" class="skills container">
+  <section id="skills" class="skills container" data-aos="fade-left">
     <h2>Technical Skills</h2>
     <ul>
-      <li>Java (Core, OOPs, Multithreading)</li>
-      <li>Spring Boot, Microservices</li>
+      <li>Java</li>
+      <li>Spring Boot, Multithreading</li>
       <li>MySQL</li>
-      <li>Git, GitHub</li>
-      <li>VS Code, IntelliJ, Eclipse</li>
+      <li>Git, GitHub, VS Code, IntelliJ, Eclipse</li>
     </ul>
   </section>
 
-  <section id="projects" class="projects container">
+  <section id="projects" class="projects container" data-aos="zoom-in-up">
     <h2>Projects</h2>
     <div class="project-card">
-      <h3>Fake Job Post Prediction Using Machine Learning Algorithms</h3>
-      <p>
-        Built a predictive model using Python and machine learning algorithms to identify fake job posts 
-        based on given job profiles.
-      </p>
-      <a href="https://github.com/Abhinai1864/Fake-Job-Post-Prediction-Using-Machine-Learning-Algorithm">View More</a>
+      <h3>Fake Job Post Prediction Using ML</h3>
+      <p>Python + Machine Learning algorithms to predict genuineness of job posts.</p>
+      <a href="https://github.com/Abhinai1864/Fake-Job-Post-Prediction-Using-Machine-Learning-Algorithm#" target="_blank">View More</a>
     </div>
     <div class="project-card">
-      <h3>Detecting Mobile Malicious Webpages in Real Time</h3>
-      <p>
-        A colorful front-end application built using HTML, CSS, and Java for detecting malicious webpages.
-      </p>
-      <a href="https://github.com/Abhinai1864/Detecting-Mobile-Malicious-Webpages-in-Real-Time-F">View More</a>
+      <h3>Detecting Mobile Malicious Webpages</h3>
+      <p>Colorful website using HTML, CSS, and Java to detect phishing pages.</p>
+      <a href="https://github.com/Abhinai1864/Detecting-Mobile-Malicious-Webpages-in-Real-Time-F" target="_blank">View More</a>
     </div>
   </section>
 
-  <section id="contact" class="contact container">
+  <section id="contact" class="contact container" data-aos="fade-up">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:maddela.abhinay2004@gmail.com">maddela.abhinay2004@gmail.com</a></p>
     <p>Phone: +91-6300364024</p>
     <p>Location: Hyderabad, India</p>
     <p>
-      <a href="https://github.com/Abhinai1864" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/abhinai1864/" target="_blank">LinkedIn</a> |
-      <a href="https://leetcode.com/u/Abhinai1864/" target="_blank">LeetCode</a>
+      <a href="https://github.com/Abhinai1864">GitHub</a> |
+      <a href="https://www.linkedin.com/in/abhinai1864/">LinkedIn</a> |
+      <a href="https://leetcode.com/u/Abhinai1864/">LeetCode</a>
     </p>
   </section>
 
   <footer>
     <p>&copy; 2025 Maddela Abhinai. All rights reserved.</p>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const typedText = document.querySelector('.typing');
+    let text = "Maddela Abhinai";
+    let i = 0;
+    function typingEffect() {
+      if (i < text.length) {
+        typedText.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typingEffect, 100);
+      }
+    }
+    typedText.innerHTML = "";
+    typingEffect();
+  </script>
 </body>
 </html>

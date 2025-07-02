@@ -65,9 +65,6 @@ nav a:hover {
 nav a:hover::after {
   width: 100%;
 }
- html {
-  scroll-behavior: smooth;
-}
 /*.profile-photo {
   width: 150px;
   height: 150px;

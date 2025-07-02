@@ -25,8 +25,50 @@ header {
   padding: 3rem 0;
   text-align: center;
 }
+nav {
+  background: #023e8a;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-.profile-photo {
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #90e0ef;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+ html {
+  scroll-behavior: smooth;
+}
+/*.profile-photo {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -36,6 +78,17 @@ header {
   display: block;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+*/
+.profile-photo {
+  width: 450px;       /* Width of the rectangle */
+  height: 300px;      /* Height of the rectangle */
+  object-fit: cover;
+  border-radius: 0;   /* No rounding – keeps rectangle */
+  border: 4px solid white;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} 
 
 header h1 {
   font-size: 3rem;
